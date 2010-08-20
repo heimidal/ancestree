@@ -1,4 +1,6 @@
-module InheritAncestorAttributes
+require 'active_support/concern'
+
+module Ancestree
   extend ActiveSupport::Concern
   
   def inherits_from_ancestor?(method)
@@ -41,3 +43,5 @@ module InheritAncestorAttributes
 
   end
 end
+
+ActiveRecord::Base.send :include, Ancestree
