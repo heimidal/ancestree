@@ -1,0 +1,23 @@
+Ancestree
+=========
+
+Ancestree is a simple Rails 3 plugin that makes it easy to automatically inherit attributes from a parent object.
+
+Ancestree makes a few assumptions about the objects that will be inheriting attributes -- namely, objects should be in a tree-like structure, with each object responding to '#parent' up the tree, with the top-level objects returning nil for parent.
+
+
+Example
+=======
+
+Let's assume you have a Node model in your Rails app and that Node objects each have a parent. You want Nodes to be "disabled" if it or any of its parents are disabled:
+
+class Node < ActiveRecord::Base
+  include InheritAncestorAttributes
+  
+  belongs_to :parent, :class_name => 'Node'
+  
+  inherit_ancestor_attributes :disabled?
+end 
+
+
+Copyright (c) 2010 Brian Rose, released under the MIT license
