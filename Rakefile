@@ -31,9 +31,9 @@ begin
     gemspec.email = "brian@heimidal.net"
     gemspec.homepage = "http://github.com/heimidal/ancestree"
     gemspec.authors = ["Brian Rose", "Gabe Varela"]
-    gemspec.add_development_dependency('rspec', '2.0.0.beta.19')
-    gemspec.add_dependency('activesupport', '>= 3.0.0.rc')
-    gemspec.add_dependency('activerecord', '>= 3.0.0.rc')
+    gemspec.add_development_dependency('rspec', '~> 2.0.0')
+    gemspec.add_dependency('activesupport', '~> 3.0.0')
+    gemspec.add_dependency('activerecord', '~> 3.0.0')
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"

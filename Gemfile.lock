@@ -40,9 +40,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (= 3.0.0.rc)
-  activesupport (= 3.0.0.rc)
-  bundler (= 1.0.0.rc.5)
+  activerecord (~> 3.0.0)
+  activesupport (~> 3.0.0)
   jeweler
   rake
-  rspec (= 2.0.0.beta.19)
+  rspec (~> 2.0.0)
