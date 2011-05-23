@@ -17,7 +17,7 @@ class MockTreeNode
     attr_accessor :age
   end
 
-  include InheritAncestorAttributes
+  include Ancestree
   include MockConcern
 
   inherit_ancestor_attributes :name, :age, :company, :active?, :bang!
@@ -43,7 +43,7 @@ class OtherMockClass
     attr_accessor :name, :other_attr
   end
 
-  include InheritAncestorAttributes
+  include Ancestree
   include MockConcern
 
   inherit_ancestor_attributes :name, :other_attr
@@ -51,7 +51,7 @@ class OtherMockClass
   attr_accessor :parent
 end
 
-describe InheritAncestorAttributes do
+describe Ancestree do
   context "with parent" do
     subject { node = MockTreeNode.new; node.parent = MockTreeNode.new; node }
 
