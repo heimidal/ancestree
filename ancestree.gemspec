@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{ancestree}
+  s.name = "ancestree"
   s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Brian Rose", "Gabe Varela"]
-  s.date = %q{2011-05-23}
-  s.description = %q{Ancestree is a Rails 3 plugin that makes inheriting properties from parent objects in tree-like structure simple.}
-  s.email = %q{brian@heimidal.net}
+  s.date = "2011-09-26"
+  s.description = "Ancestree is a Rails 3 plugin that makes inheriting properties from parent objects in tree-like structure simple."
+  s.email = "brian@heimidal.net"
   s.extra_rdoc_files = [
     "README"
   ]
@@ -30,39 +30,33 @@ Gem::Specification.new do |s|
     "spec/spec_helper.rb",
     "uninstall.rb"
   ]
-  s.homepage = %q{http://github.com/heimidal/ancestree}
+  s.homepage = "http://github.com/heimidal/ancestree"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Rails 3 plugin to inherit attributes}
+  s.rubygems_version = "1.8.10"
+  s.summary = "Rails 3 plugin to inherit attributes"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rake>, [">= 0"])
-      s.add_runtime_dependency(%q<activesupport>, [">= 3.0.0"])
-      s.add_runtime_dependency(%q<activerecord>, [">= 3.0.0"])
-      s.add_runtime_dependency(%q<rspec>, ["~> 2.6.0"])
-      s.add_runtime_dependency(%q<jeweler>, [">= 0"])
+      s.add_runtime_dependency(%q<ancestree>, [">= 0"])
+      s.add_development_dependency(%q<jeweler>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.0.0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.0.0"])
       s.add_runtime_dependency(%q<activesupport>, ["~> 3.0.0"])
       s.add_runtime_dependency(%q<activerecord>, ["~> 3.0.0"])
     else
-      s.add_dependency(%q<rake>, [">= 0"])
-      s.add_dependency(%q<activesupport>, [">= 3.0.0"])
-      s.add_dependency(%q<activerecord>, [">= 3.0.0"])
-      s.add_dependency(%q<rspec>, ["~> 2.6.0"])
+      s.add_dependency(%q<ancestree>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
+      s.add_dependency(%q<rspec>, ["~> 2.0.0"])
       s.add_dependency(%q<rspec>, ["~> 2.0.0"])
       s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
       s.add_dependency(%q<activerecord>, ["~> 3.0.0"])
     end
   else
-    s.add_dependency(%q<rake>, [">= 0"])
-    s.add_dependency(%q<activesupport>, [">= 3.0.0"])
-    s.add_dependency(%q<activerecord>, [">= 3.0.0"])
-    s.add_dependency(%q<rspec>, ["~> 2.6.0"])
+    s.add_dependency(%q<ancestree>, [">= 0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
+    s.add_dependency(%q<rspec>, ["~> 2.0.0"])
     s.add_dependency(%q<rspec>, ["~> 2.0.0"])
     s.add_dependency(%q<activesupport>, ["~> 3.0.0"])
     s.add_dependency(%q<activerecord>, ["~> 3.0.0"])
